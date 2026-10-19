@@ -2430,3 +2430,161 @@ button {
 .nav-link.active::after {
     width: 100%;
 }
+/* =====================================
+   NEW CLEAN & RESPONSIVE FOOTER
+===================================== */
+
+.nafi-footer {
+    width: 100%;
+    padding: 45px 20px 30px;
+    background: #0b1120;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nafi-footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+    text-align: center;
+}
+
+/* Social Links */
+
+.nafi-footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 18px 25px;
+
+    width: 100%;
+}
+
+/* Individual Link */
+
+.nafi-footer-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+    padding: 12px 18px;
+
+    color: #cbd5e1;
+    background: #141d32;
+
+    border: 1px solid rgba(129, 140, 248, 0.18);
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* Icon */
+
+.nafi-footer-links a i {
+    font-size: 19px;
+    color: #818cf8;
+}
+
+/* Hover */
+
+.nafi-footer-links a:hover {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #06b6d4
+    );
+
+    color: #ffffff;
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+}
+
+.nafi-footer-links a:hover i {
+    color: #ffffff;
+}
+
+/* Keyboard Focus */
+
+.nafi-footer-links a:focus-visible {
+    outline: 2px solid #22d3ee;
+    outline-offset: 3px;
+}
+
+/* Footer Credit */
+
+.nafi-footer-credit {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.nafi-footer-credit span {
+    color: #a5b4fc;
+    font-weight: 600;
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .nafi-footer {
+        padding: 35px 15px 25px;
+    }
+
+    .nafi-footer-container {
+        gap: 25px;
+    }
+
+    .nafi-footer-links {
+        gap: 12px;
+    }
+
+    .nafi-footer-links a {
+        padding: 11px 14px;
+        font-size: 13px;
+        gap: 7px;
+    }
+
+    .nafi-footer-links a i {
+        font-size: 17px;
+    }
+
+    .nafi-footer-credit {
+        font-size: 13px;
+    }
+}
+
+/* Extra Small Mobile */
+
+@media (max-width: 380px) {
+
+    .nafi-footer-links {
+        gap: 10px;
+    }
+
+    .nafi-footer-links a {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .nafi-footer-credit span {
+        display: block;
+    }
+}
