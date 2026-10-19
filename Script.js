@@ -580,3 +580,26 @@ startPremiumTyping();
     });
 
 });
+/* ========================================
+   NAVBAR ACTIVE LINK INDICATOR
+======================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+    navLinks.forEach((link) => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.forEach((navLink) => {
+                navLink.classList.remove("active");
+            });
+
+            link.classList.add("active");
+
+        });
+
+    });
+
+});

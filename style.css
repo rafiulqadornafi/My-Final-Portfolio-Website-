@@ -2398,3 +2398,35 @@ button {
         height: 64px;
     }
 }
+/* ========================================
+   NAVBAR ACTIVE UNDERLINE
+======================================== */
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+
+    width: 0;
+    height: 3px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
