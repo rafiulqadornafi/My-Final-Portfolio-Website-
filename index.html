@@ -4,161 +4,1747 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Portfolio of Rafiul Qador Nafi, an aspiring AI Engineer and Cybersecurity Enthusiast with frontend development skills.">
+
+    <meta name="keywords"
+        content="Rafiul Qador Nafi, Portfolio, AI Engineer, Cybersecurity, Frontend Developer, Web Development">
+
+    <meta name="author" content="Rafiul Qador Nafi">
+
+    <title>Rafiul Qador Nafi | Personal Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
-    <!-- ওপরের নীল হেডার অংশ -->
-    <header class="top-header">
-        <div class="logo-container">
-            <img src="./Screenshot 2026-07-30 003919.png" alt="Logo" class="logo-img">
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="#home" class="logo aiub-logo-link" aria-label="Back to Home">
+                <img src="aiub-logo.png" alt="AIUB Logo" class="custom-logo">
+            </a>
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#about" class="nav-link">About</a>
+
+                <a href="#skills" class="nav-link">Skills</a>
+
+                <a href="#projects" class="nav-link">Projects</a>
+
+                <a href="#journey" class="nav-link">Journey</a>
+
+                <a href="#contact" class="nav-link">Contact</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="#contact" class="nav-contact-btn">
+                    Let's Talk
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-controls="navMenu"
+                    aria-expanded="false">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
         </div>
-        <h1>My Portfolio</h1>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="profile-img-container">
-            <img src="./My image.jpeg" alt="Profile Picture" class="profile-img">
-        </div>
-        <h2 class="my-name">Rafiul Qador Nafi</h2>
-        <p class="my-title">Full-stack Web Developer</p>
-        <p class="hero-desc">Welcome to my personal portfolio website. I enjoy creating responsive and user-friendly
-            websites using HTML and CSS.</p>
-        <a href="#contact" class="hire-btn">Hire Me</a>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="card">
-            <p>I am a passionate web development student with a strong interest in designing clean and responsive
-                websites.</p>
-            <p><strong>Education:</strong> B.Sc. in Computer Science</p>
-            <p><strong>Career Goal:</strong> Become a Professional Web Developer</p>
-        </div>
-    </section>
+    <main>
 
-    <!-- Skills Section (লোগো ও কালার ডিজাইন সহ আপডেট করা) -->
-    <section id="skills" class="section bg-light">
-        <h2>My Skills</h2>
-        <div class="skills-container">
+        <!-- ================= HERO SECTION ================= -->
 
-            <div class="skill-card html-skill">
-                <span class="skill-badge html-badge">HTML5</span> HTML
-            </div>
+        <section id="home" class="hero-section">
 
-            <div class="skill-card css-skill">
-                <span class="skill-badge css-badge">CSS3</span> CSS
-            </div>
+            <div class="container hero-container">
 
-            <div class="skill-card bootstrap-skill">
-                <span class="skill-badge bs-badge">BS</span> Bootstrap
-            </div>
+                <div class="hero-content">
 
-            <div class="skill-card js-skill">
-                <span class="skill-badge js-badge">JS(ES6+)</span> JavaScript
-            </div>
+                    <div class="availability-badge">
 
+                        <span class="status-dot"></span>
 
+                        Open to Learning & Opportunities
 
-            <div class="skill-card git-skill">
-                <span class="skill-badge git-badge">Git</span> Git & GitHub
-            </div>
+                    </div>
 
-            <div class="skill-card comm-skill">
-                <span class="skill-badge comm-badge">Comm</span> Communication
-            </div>
+                    <!-- Animated Hero Text -->
 
-        </div>
-    </section>
+                    <p class="hero-greeting" id="heroGreeting">
+                        Hello, I'm
+                    </p>
 
-    <!-- Projects Section (একাধিক প্রজেক্ট ও লাইভ ডেমো/সোর্স কোড বাটনসহ) -->
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="projects-container">
+                    <h1 class="hero-name" id="heroName">
+                        Rafiul Qador <span>Nafi.</span>
+                    </h1>
 
-            <div class="project-card">
-                <h3>E-Commerce</h3>
-                <p>An e-commerce product page featuring clean layout and responsive grid structure.</p>
-                <div class="project-links">
-                    <a href="https://remix-remix-nafi-jersey-house-3144.ai.studio/" target="_blank"
-                        class="btn-demo">Live Demo</a>
-                    <a href="https://github.com/rafiulqadornafi/rafiulqador-nafi" target="_blank"
-                        class="btn-code">Source Code</a>
+                    <h2 class="hero-title" id="heroTitle">
+                        <span id="typingRole">
+                            Computer Science Student
+                        </span>
+                    </h2>
+
+                    <p class="hero-subtitle" id="heroSubtitle">
+                        Technology Enthusiast | Aspiring AI Engineer & Cybersecurity Professional
+                    </p>
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            View My Projects
+
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                            Contact Me
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-social">
+
+                        <span>Find me on</span>
+
+                        <a href="https://github.com/rafiulqadornafi" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                        <!-- Replace with your actual LinkedIn URL -->
+                        <a href="#contact" aria-label="Contact for LinkedIn">
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                        </a>
+
+                        <a href="mailto:rafiulqadornafi225@gmail.com" aria-label="Email">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </a>
+
+                    </div>
+
                 </div>
+
+
+                <!-- Profile Image -->
+
+                <div class="hero-image-wrapper">
+
+                    <div class="hero-image-glow"></div>
+
+                    <div class="hero-image-box">
+
+                        <img src="./My image.jpeg" alt="Portrait of Rafiul Qador Nafi" class="hero-profile-image">
+
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <span>Cybersecurity</span>
+
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <span>Artificial Intelligence</span>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="project-card">
-                <h3> Personal Portfolio </h3>
-                <p>A personal portfolio website designed cleanly to display personal info, skills, and contact details.
+        </section>
+
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-subtitle">
+                        GET TO KNOW ME
+                    </span>
+
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
+
+                    <p>
+                        My background, interests and career direction.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-content">
+
+                        <h3>
+                            Passionate About Technology
+                            & Continuous Learning
+                        </h3>
+
+                        <p>
+
+                            I'm Rafiul Qador Nafi, a Computer Science
+                            student based in Dhaka, Bangladesh.
+
+                            I enjoy exploring technology, solving
+                            problems and developing practical
+                            applications.
+
+                        </p>
+
+                        <p>
+
+                            My primary career interests are
+                            Artificial Intelligence Engineering
+                            and Cybersecurity.
+
+                            I am also interested in Data Analysis
+                            and Software Engineering.
+
+                        </p>
+
+                        <p>
+
+                            Currently, I have hands-on experience
+                            building frontend projects using
+                            HTML, CSS, JavaScript and Bootstrap.
+
+                            I also use Git, GitHub, Vercel and
+                            Netlify for version control and deployment.
+
+                        </p>
+
+
+                        <div class="about-details">
+
+                            <div class="detail-item">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <div>
+
+                                    <strong>Location</strong>
+
+                                    <span>Dhaka, Bangladesh</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <i class="fa-solid fa-graduation-cap"></i>
+
+                                <div>
+
+                                    <strong>Education</strong>
+
+                                    <span>B.Sc. in Computer Science & Engineering (CSE)
+                                        American International University-Bangladesh (AIUB)</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <i class="fa-solid fa-bullseye"></i>
+
+                                <div>
+
+                                    <strong>Career Focus</strong>
+
+                                    <span>AI & Cybersecurity</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-highlight">
+
+                        <div class="highlight-card">
+
+                            <div class="highlight-icon">
+
+                                <i class="fa-solid fa-laptop-code"></i>
+
+                            </div>
+
+                            <h3>Frontend Development</h3>
+
+                            <p>
+
+                                Building responsive,
+                                user-friendly websites
+                                and interactive web applications.
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="highlight-card">
+
+                            <div class="highlight-icon">
+
+                                <i class="fa-solid fa-rocket"></i>
+
+                            </div>
+
+                            <h3>Career Growth</h3>
+
+                            <p>
+
+                                Continuously learning and
+                                preparing for future opportunities
+                                in AI Engineering and Cybersecurity.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CAREER INTERESTS ================= -->
+
+        <section id="interests" class="section interests-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-subtitle">
+                        MY FUTURE DIRECTION
+                    </span>
+
+                    <h2>
+                        Career <span>Interests</span>
+                    </h2>
+
+                    <p>
+                        Technology fields that inspire my learning journey.
+                    </p>
+
+                </div>
+
+
+                <div class="interests-grid">
+
+
+                    <!-- AI Engineering -->
+
+                    <div class="interest-card primary-interest">
+
+                        <div class="interest-icon">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+                        <span class="interest-label">
+                            Primary Interest
+                        </span>
+
+                        <h3>AI Engineering</h3>
+
+                        <p>
+
+                            Interested in understanding and
+                            building intelligent systems
+                            and exploring real-world
+                            applications of Artificial Intelligence.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Cybersecurity -->
+
+                    <div class="interest-card primary-interest">
+
+                        <div class="interest-icon">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+                        <span class="interest-label">
+                            Primary Interest
+                        </span>
+
+                        <h3>Cybersecurity</h3>
+
+                        <p>
+
+                            Passionate about digital security,
+                            understanding cyber threats,
+                            protecting systems and exploring
+                            security technologies.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Data Analysis -->
+
+                    <div class="interest-card">
+
+                        <div class="interest-icon">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+                        <span class="interest-label">
+                            Additional Interest
+                        </span>
+
+                        <h3>Data Analysis</h3>
+
+                        <p>
+
+                            Interested in working with data,
+                            discovering patterns and
+                            transforming information into
+                            useful insights.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Software Engineering -->
+
+                    <div class="interest-card">
+
+                        <div class="interest-icon">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+                        <span class="interest-label">
+                            Additional Interest
+                        </span>
+
+                        <h3>Software Engineering</h3>
+
+                        <p>
+
+                            Enjoy building practical
+                            software applications,
+                            improving programming skills
+                            and solving real-world problems.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= TECHNICAL SKILLS ================= -->
+
+        <section id="skills" class="section skills-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-subtitle">
+                        MY KNOWLEDGE & EXPERTISE
+                    </span>
+
+                    <h2>
+                        Technical <span>Skills</span>
+                    </h2>
+
+                    <p>
+                        A collection of programming languages,
+                        technologies, tools and professional skills
+                        I use and continue to develop throughout
+                        my technology journey.
+                    </p>
+
+                </div>
+
+
+                <!-- ========== 1. PROGRAMMING LANGUAGES ========== -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-code"></i>
+                        Programming Languages
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <i class="fa-brands fa-python" style="color: #3776ab;"></i>
+                            <h4>Python</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-code" style="color: #659ad2;"></i>
+                            <h4>C++</h4>
+                        </div>
+
+                        <!-- Java -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                                alt="Java Logo" class="skill-logo" loading="lazy">
+                            <h4>Java</h4>
+                        </div>
+
+
+                        <div class="skill-card">
+                            <i class="fa-brands fa-js js-icon"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+
+                        <!-- Dart -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
+                                alt="Dart Logo" class="skill-logo" loading="lazy">
+                            <h4>Dart</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ========== 2. WEB DEVELOPMENT ========== -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        Web Development
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <i class="fa-brands fa-html5 html-icon"></i>
+                            <h4>HTML5</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-brands fa-css3-alt css-icon"></i>
+                            <h4>CSS3</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-brands fa-bootstrap bootstrap-icon"></i>
+                            <h4>Bootstrap</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-wind" style="color: #38bdf8;"></i>
+                            <h4>Tailwind CSS</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-plug" style="color: #22d3ee;"></i>
+                            <h4>API Integration</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>Responsive Design</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Mobile App Development -->
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Mobile App Development
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <!-- Flutter -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+                                alt="Flutter Logo" class="skill-logo" loading="lazy">
+                            <h4>Flutter</h4>
+                        </div>
+
+                        <!-- Dart -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
+                                alt="Dart Logo" class="skill-logo" loading="lazy">
+                            <h4>Dart</h4>
+                        </div>
+
+                        <!-- Java -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                                alt="Java Logo" class="skill-logo" loading="lazy">
+                            <h4>Java</h4>
+                        </div>
+
+                        <!-- Kotlin -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+                                alt="Kotlin Logo" class="skill-logo" loading="lazy">
+                            <h4>Kotlin</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- DATA ANALYSIS SECTION -->
+                <!-- ========================= -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-chart-column"></i>
+                        Data Analysis
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <!-- Data Analysis -->
+                        <div class="skill-card">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4>Data Analysis</h4>
+                        </div>
+
+                        <!-- NumPy -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+                                alt="NumPy Logo" class="skill-logo" loading="lazy">
+                            <h4>NumPy</h4>
+                        </div>
+
+                        <!-- Pandas -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                                alt="Pandas Logo" class="skill-logo" loading="lazy">
+                            <h4>Pandas</h4>
+                        </div>
+
+                        <!-- Matplotlib -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                                alt="Matplotlib Logo" class="skill-logo" loading="lazy">
+                            <h4>Matplotlib</h4>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                                alt="MySQL Logo" class="skill-logo" loading="lazy">
+                            <h4>MySQL</h4>
+                        </div>
+
+                        <!-- MongoDB -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB Logo" class="skill-logo" loading="lazy">
+                            <h4>MongoDB</h4>
+                        </div>
+
+                        <!-- Google Colab -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecolab/googlecolab-original.svg"
+                                alt="Google Colab Logo" class="skill-logo" loading="lazy">
+                            <h4>Google Colab</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- ========================= -->
+                <!-- GRAPHIC DESIGN -->
+                <!-- ========================= -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-palette"></i>
+                        Graphic Design & AI Tools
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <!-- Canva -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
+                                alt="Canva Logo" class="skill-logo" loading="lazy">
+                            <h4>Canva</h4>
+                        </div>
+
+                        <!-- ChatGPT -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/openai.svg" alt="ChatGPT Logo"
+                                class="skill-logo chatgpt-logo" loading="lazy">
+                            <h4>ChatGPT</h4>
+                        </div>
+
+                        <!-- Google Gemini -->
+                        <div class="skill-card">
+                            <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Google Gemini Logo"
+                                class="skill-logo" loading="lazy">
+                            <h4>Google Gemini</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- ========== 5. AI AUTOMATION ========== -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-robot"></i>
+                        AI Automation
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-diagram-project" style="color: #ea4b71;"></i>
+                            <h4>n8n</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-gears" style="color: #a855f7;"></i>
+                            <h4>Make.com</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-arrows-spin" style="color: #06b6d4;"></i>
+                            <h4>Workflow Automation</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========== 6. AI & CREATIVE TECHNOLOGY ========== -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        AI & Creative Technology
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-film" style="color: #ec4899;"></i>
+                            <h4>AI Video Generation</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========== DEVELOPMENT TOOLS & PLATFORMS ========== -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Development Tools, Frameworks & Platforms
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <i class="fa-brands fa-git-alt git-icon"></i>
+                            <h4>Git</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-brands fa-github"></i>
+                            <h4>GitHub</h4>
+                        </div>
+
+                        <!-- Visual Studio Code -->
+
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                                alt="Visual Studio Code Logo" class="skill-logo" loading="lazy">
+                            <h4>VS Code</h4>
+                        </div>
+                        <!-- Google Colab -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecolab/googlecolab-original.svg"
+                                alt="Google Colab Logo" class="skill-logo" loading="lazy">
+                            <h4>Google Colab</h4>
+                        </div>
+                        <!-- Canva -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
+                                alt="Canva Logo" class="skill-logo" loading="lazy">
+                            <h4>Canva</h4>
+                        </div>
+
+                        <!-- ChatGPT -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/openai.svg" alt="ChatGPT Logo"
+                                class="skill-logo chatgpt-logo" loading="lazy">
+                            <h4>ChatGPT</h4>
+                        </div>
+
+                        <!-- Google Gemini -->
+                        <div class="skill-card">
+                            <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Google Gemini Logo"
+                                class="skill-logo" loading="lazy">
+                            <h4>Google Gemini</h4>
+                        </div>
+                        <!-- Android Studio -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg"
+                                alt="Android Studio Logo" class="skill-logo" loading="lazy">
+                            <h4>Android Studio</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-diagram-project" style="color: #ea4b71;"></i>
+                            <h4>n8n</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-gears" style="color: #a855f7;"></i>
+                            <h4>Make.com</h4>
+                        </div>
+
+                        <!-- Vercel Original Logo -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
+                                alt="Vercel Logo" class="skill-logo vercel-logo" loading="lazy">
+                            <h4>Vercel</h4>
+                        </div>
+
+                        <!-- Netlify -->
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
+                                alt="Netlify Logo" class="skill-logo" loading="lazy">
+                            <h4>Netlify</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ========== 8. PROFESSIONAL SKILLS ========== -->
+
+                <div class="skills-category">
+
+                    <h3>
+                        <i class="fa-solid fa-users"></i>
+                        Professional Skills
+                    </h3>
+
+                    <div class="skills-grid">
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-comments" style="color: #38bdf8;"></i>
+                            <h4>Communication</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-lightbulb" style="color: #facc15;"></i>
+                            <h4>Problem Solving</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-people-group" style="color: #a78bfa;"></i>
+                            <h4>Teamwork</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-brain" style="color: #ec4899;"></i>
+                            <h4>Critical Thinking</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-book-open" style="color: #22c55e;"></i>
+                            <h4>Continuous Learning</h4>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fa-solid fa-clock" style="color: #fb923c;"></i>
+                            <h4>Time Management</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS SECTION ================= -->
+
+        <section id="projects" class="section projects-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-subtitle">
+                        MY WORK
+                    </span>
+
+                    <h2>
+                        Featured <span>Projects</span>
+                    </h2>
+
+                    <p>
+                        A collection of practical projects
+                        I've worked on.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                WEB DEVELOPMENT
+                            </span>
+
+                            <h3>E-Commerce Website</h3>
+
+                            <p>
+
+                                An e-commerce product page
+                                featuring a clean layout
+                                and responsive grid structure.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Web Design</span>
+
+                                <span>Responsive Layout</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://remix-remix-nafi-jersey-house-3144.ai.studio/" target="_blank"
+                                    rel="noopener noreferrer" class="project-demo">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                    Live Demo
+
+                                </a>
+
+                                <a href="https://github.com/rafiulqadornafi/rafiulqador-nafi" target="_blank"
+                                    rel="noopener noreferrer" class="project-code">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                    Source Code
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                PERSONAL WEBSITE
+                            </span>
+
+                            <h3>Personal Portfolio</h3>
+
+                            <p>
+
+                                A personal portfolio website
+                                designed to showcase
+                                personal information,
+                                technical skills and projects.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML</span>
+
+                                <span>CSS</span>
+
+                                <span>Responsive Design</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://rafiulqadornafi.github.io/MY-Portfolio-Website/" target="_blank"
+                                    rel="noopener noreferrer" class="project-demo">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                    Live Demo
+
+                                </a>
+
+                                <a href="https://github.com/rafiulqadornafi/MY-Portfolio-Website" target="_blank"
+                                    rel="noopener noreferrer" class="project-code">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                    Source Code
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-window-maximize"></i>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                LANDING PAGE
+                            </span>
+
+                            <h3>Responsive Landing Page</h3>
+
+                            <p>
+
+                                A modern responsive landing page
+                                built to showcase products
+                                and services with a clean design.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML5</span>
+
+                                <span>CSS3</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://gorgeous-mooncake-56794c.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer" class="project-demo">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                    Live Demo
+
+                                </a>
+
+                                <a href="https://github.com/rafiulqadornafi/kola11" target="_blank"
+                                    rel="noopener noreferrer" class="project-code">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                    Source Code
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 4 -->
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-building"></i>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                BUSINESS WEBSITE
+                            </span>
+
+                            <h3>Business Website</h3>
+
+                            <p>
+
+                                A business-focused website
+                                created to present services,
+                                business information and
+                                a professional online presence.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Web Development</span>
+
+                                <span>UI Design</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://rafiulqadornafi.github.io/Business-Website/" target="_blank"
+                                    rel="noopener noreferrer" class="project-demo">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                    Live Demo
+
+                                </a>
+
+                                <a href="https://github.com/rafiulqadornafi/Business-Website" target="_blank"
+                                    rel="noopener noreferrer" class="project-code">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                    Source Code
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 5 -->
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-list-check"></i>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                WEB APPLICATION
+                            </span>
+
+                            <h3>Daily Planner App</h3>
+
+                            <p>
+
+                                An interactive daily planner
+                                application designed to
+                                organize tasks and improve
+                                daily productivity.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Web Application</span>
+
+                                <span>Productivity</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://dainty-horse-679463.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer" class="project-demo">
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                    Live Demo
+
+                                </a>
+
+                                <a href="https://github.com/rafiulqadornafi/Daily-Planner-Main" target="_blank"
+                                    rel="noopener noreferrer" class="project-code">
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                    Source Code
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="projects-footer">
+
+                    <a href="https://github.com/rafiulqadornafi" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        View More on GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= LEARNING JOURNEY ================= -->
+
+        <section id="journey" class="section journey-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-subtitle">
+                        EDUCATION & GROWTH
+                    </span>
+
+                    <h2>
+                        My Learning <span>Journey</span>
+                    </h2>
+
+                    <p>
+                        Building a strong technical foundation
+                        for my future career.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-label">EDUCATION</span>
+
+                            <h3>Computer Science & Engineering</h3>
+
+                            <p>
+                                Currently studying Computer Science & Engineering at
+                                American International University-Bangladesh (AIUB),
+                                building my knowledge in programming, technology,
+                                and software development.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Practical Experience -->
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-label">
+                                PRACTICAL EXPERIENCE
+                            </span>
+
+                            <h3>Technical Development & Practical Learning</h3>
+
+                            <p>
+                                Building projects in Frontend Web Development
+                                and Mobile App Development while exploring
+                                Software Engineering and Full Stack Development.
+                                Developing skills in Python, JavaScript, Flutter,
+                                MySQL, MongoDB, Data Analysis, and AI Automation
+                                using n8n and Make.com.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-label">
+                                FUTURE CAREER GOAL
+                            </span>
+
+                            <h3>AI Engineering & Cybersecurity</h3>
+
+                            <p>
+
+                                Working toward a future career
+                                in Artificial Intelligence
+                                Engineering or Cybersecurity,
+                                while continuing to strengthen
+                                my programming and technical skills.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-subtitle">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>
+                        Let's <span>Connect</span>
+                    </h2>
+
+                    <p>
+
+                        Have a question, project idea
+                        or professional opportunity?
+
+                        Feel free to contact me.
+
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-info">
+
+                        <h3>Contact Information</h3>
+
+                        <p>
+
+                            I'm always interested in
+                            connecting with developers,
+                            technology enthusiasts
+                            and professionals.
+
+                        </p>
+
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>Email</h4>
+
+                                <a href="mailto:rafiulqadornafi225@gmail.com">
+
+                                    rafiulqadornafi225@gmail.com
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>Phone</h4>
+
+                                <a href="tel:+8801897296110">
+
+                                    +880 1897296110
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>Location</h4>
+
+                                <p>Dhaka, Bangladesh</p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="contact-social">
+
+                            <a href="https://github.com/rafiulqadornafi" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+
+                                <i class="fa-brands fa-github"></i>
+
+                            </a>
+
+                            <a href="mailto:rafiulqadornafi225@gmail.com" aria-label="Email">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Contact Form -->
+
+                    <div class="contact-form-wrapper">
+
+                        <h3>Send Me a Message</h3>
+
+                        <!--
+                            Formspree Setup:
+
+                            1. Create an account at formspree.io
+                            2. Create a new form
+                            3. Copy your Form ID
+                            4. Replace YOUR_FORM_ID below
+                        -->
+
+                        <form action="https://formspree.io/f/xbgdepra" method="POST" class="contact-form"
+                            id="contactForm">
+
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your Name
+                                </label>
+
+                                <input type="text" id="name" name="name" placeholder="Enter your full name"
+                                    autocomplete="name" required>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Your Email
+                                </label>
+
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    autocomplete="email" required>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <input type="text" id="subject" name="subject" placeholder="What is this about?"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Your Message
+                                </label>
+
+                                <textarea id="message" name="message" rows="6" placeholder="Write your message here..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                                Send Message
+
+                            </button>
+
+
+                            <p class="form-note">
+
+                                Your message will be delivered
+                                through a secure form service.
+
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ========== FOOTER ========== -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+                    
+                    <p>
+                        Computer Science Student <br>
+                        Technology Enthusiast
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-social">
+
+                    <a href="https://github.com/rafiulqadornafi" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="mailto:rafiulqadornafi225@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear">2026</span>
+                    Rafiul Qador Nafi.
+                    All Rights Reserved.
                 </p>
-                <div class="project-links">
-                    <a href="https://rafiulqadornafi.github.io/MY-Portfolio-Website/" target="_blank"
-                        class="btn-demo">Live Demo</a>
-                    <a href="https://github.com/rafiulqadornafi/MY-Portfolio-Website" target="_blank"
-                        class="btn-code">Source Code</a>
-                </div>
 
+                <p>
+                    Designed & Developed by
+                    <span>Rafiul Qador Nafi</span>
+                </p>
 
             </div>
 
-            <div class="project-card">
-                <h3>Landing Page</h3>
-                <p>A responsive landing page built using HTML5 and CSS for showcasing products or services.</p>
-                <div class="project-links">
-                    <a href="https://gorgeous-mooncake-56794c.netlify.app/" target="_blank" class="btn-demo">Live
-                        Demo</a>
-                    <a href="https://github.com/rafiulqadornafi/kola11" target="_blank" class="btn-code">Source
-                        Code</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>My Business Website </h3>
-                <p>Here include my business website and saas project.</p>
-                <div class="project-links">
-                    <a href="https://rafiulqadornafi.github.io/Business-Website/" target="_blank"
-                        class="btn-demo">Live Demo</a>
-                    <a href="https://github.com/rafiulqadornafi/Business-Website" target="_blank"
-                        class="btn-code">Source Code</a>
-                </div>
-            </div>
-            <!-- Daily Planner App Card (আলাদা কার্ড হিসেবে) -->
-            <div class="project-card">
-                <h3>Daily Planner App</h3>
-                <p>A smart and interactive daily planner application to organize your tasks and boost productivity.</p>
-                <div class="project-links">
-                    <a href="https://dainty-horse-679463.netlify.app/" target="_blank" class="btn-demo">Live Demo</a>
-                    <a href="https://github.com/rafiulqadornafi/Daily-Planner-Main" target="_blank"
-                        class="btn-code">Source Code</a>
-                </div>
-            </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <h2>Contact Details</h2>
-        <div class="card contact-card">
-            <p><strong>Email:</strong> rafiulqadornafi225@gmail.com</p>
-            <p><strong>Phone:</strong> +880 1897296110</p>
-            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; Rafiul Qador Nafi. All rights reserved.</p>
     </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
