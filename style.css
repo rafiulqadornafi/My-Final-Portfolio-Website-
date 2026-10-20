@@ -2588,3 +2588,12 @@ button {
         display: block;
     }
 }
+/* Original C++ Logo */
+
+.cpp-skill-logo {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
