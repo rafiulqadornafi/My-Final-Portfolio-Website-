@@ -2606,3 +2606,12 @@ button {
     display: block;
     margin: 0 auto 20px;
 }
+/* Google Gemini Logo Size Fix */
+.skill-card .gemini-skill-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
